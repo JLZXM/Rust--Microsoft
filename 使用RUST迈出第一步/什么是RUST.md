@@ -37,4 +37,16 @@ Rust 标准库 std 包含 Rust 程序中的基本定义和操作的可重复使�
 默认情况下，std 库适用于所有 Rust 箱。 若要访问箱或库中的可重复使用代码，请使用 use 关键字。 通过 use 关键字，箱或库中的代码就会“进入范围”，这样你就可以访问程序中的定义和功能。 标准库是在路径 std 的 use 语句中访问的，如 use std::fmt 所示。 其他箱或库是通过其名称访问的，例如 use regex::Regex。
   
 ## 使用 Cargo 创建和管理项目
-  
+虽然可以直接使用 Rust 编译器 (rustc) 来生成箱，但大多数项目都使用 Rust 生成工具和名为 Cargo 的依赖项管理器。
+```rust
+    Cargo 可以为你做许多事情，包括：
+
+    使用 cargo new 命令创建新的项目模板。
+    使用 cargo build 编译项目。
+    使用 cargo run 命令编译并运行项目。
+    使用 cargo test 命令测试项目。
+    使用 cargo check 命令检查项目类型。
+    使用 cargo doc 命令编译项目的文档。
+    使用 cargo publish 命令将库发布到 crates.io。
+    通过将箱的名称添加到 Cargo.toml 文件来将依赖箱添加到项目。
+```
