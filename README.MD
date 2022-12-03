@@ -1,2 +1,1 @@
-This is my rust lerning word!
-come on!
+RUST 入门笔记。
